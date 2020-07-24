@@ -102,7 +102,7 @@ DONE 2. Create a `connection.js` file inside `config` directory.
 
    * Export the connection.
 
-3. Create an `orm.js` file inside `config` directory.
+DONE 3. Create an `orm.js` file inside `config` directory.
 
    * Import (require) `connection.js` into `orm.js`
 
