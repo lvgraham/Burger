@@ -116,28 +116,28 @@ DONE 3. Create an `orm.js` file inside `config` directory.
 
 #### Model setup
 
-* Inside your `burger` directory, create a folder named `models`.
+DONE * Inside your `burger` directory, create a folder named `models`.
 
-  * In `models`, make a `burger.js` file.
+  DONE * In `models`, make a `burger.js` file.
 
-    * Inside `burger.js`, import `orm.js` into `burger.js`
+   DONE * Inside `burger.js`, import `orm.js` into `burger.js`
 
-    * Also inside `burger.js`, create the code that will call the ORM functions using burger specific input for the ORM.
+   DONE * Also inside `burger.js`, create the code that will call the ORM functions using burger specific input for the ORM.
 
-    * Export at the end of the `burger.js` file.
+    DONE* Export at the end of the `burger.js` file.
 
 #### Controller setup
 
-1. Inside your `burger` directory, create a folder named `controllers`.
+DONE 1. Inside your `burger` directory, create a folder named `controllers`.
 
-2. In `controllers`, create the `burgers_controller.js` file.
+DONE 2. In `controllers`, create the `burgers_controller.js` file.
 
-3. Inside the `burgers_controller.js` file, import the following:
+DONE 3. Inside the `burgers_controller.js` file, import the following:
 
    * Express
    * `burger.js`
 
-4. Create the `router` for the app, and export the `router` at the end of your file.
+DONE 4. Create the `router` for the app, and export the `router` at the end of your file.
 
 #### View setup
 
