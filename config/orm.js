@@ -1,4 +1,5 @@
 const connection = require('./connection');
+const { query } = require('express');
 
 const objToSql = function (object) {
     let output = [];
@@ -30,7 +31,7 @@ const orm = {
         queryString += cols.toString();
         queryString += ') ';
         queryString += 'VALUES (';
-        queryString += printQuestionMarks(vals.length);
+        queryString += vals.toString();
         queryString += ') ';
 
         console.log(queryString);
