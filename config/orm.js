@@ -1,13 +1,25 @@
 const connection = require('./connection');
 
+const objToSql = function (object) {
+    let output = [];
+    for(let key in object){
+        //give it json object will take the key as a column and then put an equal sign with the value associated with that key in the object
+        // object[key]
+        //create an array of keys associated with their values in sql syntax
+        output.push(key + '=' + object[key]);
+    }
+    return output.toString();
+}
+
 const orm = {
-    selectAll: function(tableInput, cb) {
+    selectAll: function(tableInput, eileen) {
         let queryString = 'SELECT * FROM ' + tableInput + ';';
+        //talking to the database - getting the info
         connection.query(queryString, function(err, result) {
             if (err) {
                 throw err;
             }
-            cb(result);
+            eileen(result);
         });
     },
 
