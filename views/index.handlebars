@@ -1,41 +1,50 @@
-<h1>Burgers!</h1>
 
-<h2>Burgers that I want to devour:</h2>
+<div class = 'header'>
 
-<ul>
-  {{#each burger}}
-    {{#unless devoured}}
-      <div>{{this.burger_name}}
-        <button class="devoured-status" data-id="{{id}}" data-newdevoured="{{devoured}}">
-		      {{#if devoured}}yummmm burgers{{else}}nom{{/if}}
-	      </button>
-      </div>
-    {{/unless}}
-  {{/each}}
-</ul>
+  <h1>Burgers!</h1>
 
-<h2>Burgers that I have devoured:</h2>
+</div>
+<div id = 'container-fluid'>
+  <div class = 'row'>
+    <div class = 'newBurgers col-sm'>
+      <h2>Burgers that I want to devour:</h2>
+      <p>
+        {{#each burger}}
+          {{#unless devoured}}
+            <div class = 'listItem'>{{this.burger_name}}
+              <button class="devoured-status btn btn-light" data-id="{{id}}" data-newdevoured="{{devoured}}">NOM NOM</button>
+            </div>
+          {{/unless}}
+        {{/each}}
+      </p>
+    </div>
 
-<ul>
-  {{#each burger}}
-    {{#if devoured}}
-      <div>{{this.burger_name}}
-        <button class="delete-burger" data-id="{{this.id}}">DELETE!</button>
-      </div>
-    {{/if}}
-  {{/each}}
-</ul>
+    <div class = 'addBurgerForm col-sm'>
+      <h2>Enter burger to devour:</h2>
+      <form class="create-form">
+        <div class="form-group">
+          <label for="burger"Burger name:</label>
+          <input type="text" id="burger" name="name">
+        </div>
+        <button class = 'btn btn-light' type="submit">BURGER TIME</button>
+      </form>
+    </div>
 
-<h2>Add a burger to the list!</h2>
-<form class="create-form">
+    <div class = 'devouredBurgers col-sm'>
+      <h2>Burgers that I have devoured:</h2>
+      <p>
+        {{#each burger}}
+          {{#if devoured}}
+            <div class = 'listItem'>{{this.burger_name}}
+              <button class="delete-burger btn btn-light" data-id="{{this.id}}">DELETE</button>
+            </div>
+          {{/if}}
+        {{/each}}
+      </p>
+    </div>
 
-  <div class="form-group">
-    <label for="burger"Burger name:</label>
-    <input type="text" id="burger" name="name">
   </div>
-
-  <button type="submit">BURGER TIME</button>
-</form>
+</div>
 
 
 
