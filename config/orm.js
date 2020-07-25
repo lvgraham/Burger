@@ -31,10 +31,8 @@ const orm = {
         queryString += cols.toString();
         queryString += ') ';
         queryString += 'VALUES (';
-        queryString += vals.toString();
-        queryString += ') ';
-
-        console.log(queryString);
+        queryString += `'${vals.toString()}'`;
+        queryString += ');';
 
         connection.query(queryString, vals, function (err, result) {
             if (err) {
