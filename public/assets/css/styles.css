@@ -16,31 +16,21 @@ h1{
 h2{
   text-align: center;
   font-size: 20px !important;
+  font-family: 'Ranchers', Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
 }
 
 .btn{
   padding: 5px !important;
+  font-size: 12px !important;
 }
 
-.newBurgers{
+.burgers{
   background-color: lightgrey;
   padding: 15px;
   margin: 15px;
   text-align: center;
-}
-
-.addBurgerForm{
-  background-color: lightsalmon;
-  padding: 15px;
-  margin: 15px;
-  text-align: center;
-}
-
-.devouredBurgers{
-  background-color: lightskyblue;
-  padding: 15px;
-  margin: 15px;
-  text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .header{

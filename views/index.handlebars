@@ -6,8 +6,8 @@
 </div>
 <div id = 'container-fluid'>
   <div class = 'row'>
-    <div class = 'newBurgers col-sm'>
-      <h2>Burgers that I want to devour:</h2>
+    <div class = 'burgers col-sm'>
+      <h2>Burgers I want to devour:</h2>
       <p>
         {{#each burger}}
           {{#unless devoured}}
@@ -19,19 +19,19 @@
       </p>
     </div>
 
-    <div class = 'addBurgerForm col-sm'>
-      <h2>Enter burger to devour:</h2>
+    <div class = 'burgers col-sm'>
+      <h2>Enter burger:</h2>
       <form class="create-form">
         <div class="form-group">
           <label for="burger"Burger name:</label>
           <input type="text" id="burger" name="name">
         </div>
-        <button class = 'btn btn-light' type="submit">BURGER TIME</button>
+        <button class = 'btn btn-light' type="submit"><i class="fas fa-hamburger"></i> BURGER TIME <i class="fas fa-hamburger"></i></button>
       </form>
     </div>
 
-    <div class = 'devouredBurgers col-sm'>
-      <h2>Burgers that I have devoured:</h2>
+    <div class = 'burgers col-sm'>
+      <h2>Burgers I have devoured:</h2>
       <p>
         {{#each burger}}
           {{#if devoured}}
