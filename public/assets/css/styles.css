@@ -5,10 +5,13 @@
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+  vertical-align: baseline;
 }
 
 /* css for index.handlebars*/
+h1{
+  font-size: 100px !important;
+}
 
 h2{
   text-align: center;
@@ -41,11 +44,17 @@ h2{
 }
 
 .header{
-  padding: 60px;
+  padding: 225px;
   text-align: center;
   background: #1abc9c;
+  background-image: url('../images/burger.jpg'); 
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  opacity: 90%;
+  width: 100%;
+  font-family: 'Ranchers', Arial, Helvetica, sans-serif;
   color: white;
-  font-size: 30px;
+  font-size: 100px;
 }
 
 .listItem{
