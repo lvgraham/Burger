@@ -12,5 +12,5 @@ SO THAT I can keep track of when I have eaten them
 
 ### Example
 
-![gif of application](https://media.giphy.com/media/ii1rpYxHVNdHMUfuxT/giphy.gif)
+![gif of application](https://media.giphy.com/media/mD4YOdycyJQAy6ZeUG/giphy.gif)
 
