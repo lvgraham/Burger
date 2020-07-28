@@ -10,7 +10,5 @@ As a burger-connoisseur
 I WANT a web application that I can log the burgers I would like to eat
 SO THAT I can keep track of when I have eaten them
 
-### Example
 
-![gif of application](https://media.giphy.com/media/mD4YOdycyJQAy6ZeUG/giphy.gif)
 
