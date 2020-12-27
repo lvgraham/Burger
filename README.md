@@ -13,3 +13,5 @@ SO THAT I can keep track of when I have eaten them
 ### Example
 
 ![gif of application](./public/assets/images/burger_time.png)
+
+You are able to view the deployed application [here](https://whispering-mesa-68424.herokuapp.com/)
